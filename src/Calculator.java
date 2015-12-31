@@ -113,8 +113,11 @@ class Calculator extends JFrame  {
 	   	
 	   	JButton clear = createButton(200, 50, "CLR");
 	   	add(clear, 0, 5, 1, 2, new Insets(4,4,4,4));
+	   	clear.addActionListener(new clearButtonAction());
+	   	
 	   	JButton enter = createButton(200, 50, "=");
 	   	add(enter, 2, 5, 1, 2, new Insets(4,4,4,4));
+	   	enter.addActionListener(new enterButtonAction());
 	   	
    }
    	
